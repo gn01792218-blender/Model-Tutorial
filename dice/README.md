@@ -1,4 +1,4 @@
-# Dice 建模步驟提示 : 
+# Dice 一般模式建模步驟提示 : 
 ## 1.將Cube 製作出 5*5 的切割線
 ## 2.挖洞
 選好要挖洞的格子
@@ -12,6 +12,18 @@ ctrl+F --> Poke Faces
 
 ## 3.使用表面細分修改器 
 ## 4.Shade Smooth 做最後收尾
+
+# Dice Geometry Nodes 模式建模步驟
+
+## 1.切割cube為5*5，並且平滑處理 
+ (1)增加一個Subdivide Mesh 節點 ( 只會切分出更多頂點 )<br>
+ (2)增加一個Subdivision Surface 節點 ( 表面細分，會執行平滑工作smooth )
+ (3)增加一個Set Shade Smooth 節點 ( 光滑處理 )
+## 2.挖洞
+
+
+## 教學影片
+https://www.udemy.com/course/blender-environments/learn/lecture/32846858#overview
 
 # 作業檢核目標 : 
 1.物件名稱是否有取好
